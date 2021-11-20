@@ -72,12 +72,15 @@ body {
     overflow: hidden;
 }
 
+.profile-photo img {
+    height: 6rem;
+}
+
 .instagram-login{
     background-color: #0095f6;
     color: white;
     padding: 8px;
     border-radius: 4px;
-    margin-top: 1rem;
 }
 
 .instagram-logout{
@@ -124,3 +127,24 @@ body {
     background-image: url('./img/googleplay.png');
 }
 
+/*media queries*/
+
+@media (max-width: 1024px) {
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+}
